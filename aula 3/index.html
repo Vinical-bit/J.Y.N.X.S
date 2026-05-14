@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela de Classificação</title>
+
+
+    <style>
+        div{
+            margin: 10px;
+        }
+        /* Define o estilo geral da tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Remove espaços entre as bordas */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilização das células */
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr:hover{
+            background-color: rgba(0, 255, 255, 0.185);
+        }
+
+        /* Cabeçalho com cor diferente */
+        th {
+            background-color: #f4f4f4;
+        }
+
+        /* Alinha o nome dos times à esquerda */
+        td.time {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>TABELA</h2>
+
+   <div>
+       <table>
+        <!-- THEAD = Cabeçalho da tabela -->
+        <thead>
+            <!-- TR (Table Row) = Linha da tabela -->
+            <tr>
+                <!-- TH (Table Header) = Célula de cabeçalho -->
+                <th>CLASSIFICAÇÃO</th>
+                <th>P</th>
+                <th>J</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>%</th>
+            </tr>
+        </thead>
+        <!-- TBODY = Corpo da tabela -->
+        <tbody>
+            <tr>
+                <td class="time">1 Palmeiras</td>
+                <td>34</td>
+                <td>15</td>
+                <td>10</td>
+                <td>4</td>
+                <td>1</td>
+                <td>25</td>
+                <td>12</td>
+                <td>13</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">2 Flamengo</td>
+                <td>30</td>
+                <td>14</td>
+                <td>9</td>
+                <td>3</td>
+                <td>2</td>
+                <td>27</td>
+                <td>12</td>
+                <td>15</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">3 Fluminense</td>
+                <td>27</td>
+                <td>15</td>
+                <td>8</td>
+                <td>3</td>
+                <td>4</td>
+                <td>25</td>
+                <td>20</td>
+                <td>5</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">4 São Paulo</td>
+                <td>24</td>
+                <td>15</td>
+                <td>7</td>
+                <td>3</td>
+                <td>5</td>
+                <td>21</td>
+                <td>16</td>
+                <td>5</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">5 Athletico-PR</td>
+                <td>23</td>
+                <td>15</td>
+                <td>7</td>
+                <td>2</td>
+                <td>6</td>
+                <td>20</td>
+                <td>16</td>
+                <td>4</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">6 Bahia</td>
+                <td>22</td>
+                <td>14</td>
+                <td>6</td>
+                <td>4</td>
+                <td>4</td>
+                <td>20</td>
+                <td>18</td>
+                <td>2</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">7 Bragantino</td>
+                <td>20</td>
+                <td>15</td>
+                <td>6</td>
+                <td>2</td>
+                <td>7</td>
+                <td>17</td>
+                <td>18</td>
+                <td>-1</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">8 Vasco</td>
+                <td>20</td>
+                <td>15</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>21</td>
+                <td>21</td>
+                <td>0</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">9 Coritiba</td>
+                <td>20</td>
+                <td>15</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>18</td>
+                <td>19</td>
+                <td>-1</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">10 Vitória</td>
+                <td>19</td>
+                <td>14</td>
+                <td>5</td>
+                <td>4</td>
+                <td>5</td>
+                <td>18</td>
+                <td>20</td>
+                <td>-2</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">11 Cruzeiro</td>
+                <td>19</td>
+                <td>15</td>
+                <td>5</td>
+                <td>4</td>
+                <td>6</td>
+                <td>20</td>
+                <td>25</td>
+                <td> -5</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">12 Botafogo</td>
+                <td>18</td>
+                <td>14</td>
+                <td>5</td>
+                <td>3</td>
+                <td>6</td>
+                <td>26</td>
+                <td>27</td>
+                <td> -1</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">13 Atletico-MG</td>
+                <td>18</td>
+                <td>15</td>
+                <td>5</td>
+                <td>3</td>
+                <td>7</td>
+                <td>18</td>
+                <td>21</td>
+                <td> -3</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">14 Internacional</td>
+                <td>18</td>
+                <td>15</td>
+                <td>4</td>
+                <td>6</td>
+                <td>5</td>
+                <td>16</td>
+                <td>16</td>
+                <td>0</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">15 Santos</td>
+                <td>18</td>
+                <td>15</td>
+                <td>4</td>
+                <td>6</td>
+                <td>5</td>
+                <td>21</td>
+                <td>22</td>
+                <td> -1</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">16 Corinthians</td>
+                <td>18</td>
+                <td>15</td>
+                <td>4</td>
+                <td>6</td>
+                <td>5</td>
+                <td>13</td>
+                <td>15</td>
+                <td> -2</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">17 Gremio</td>
+                <td>17</td>
+                <td>15</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>15</td>
+                <td>17</td>
+                <td> -2</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">18 Mirassol</td>
+                <td>13</td>
+                <td>14</td>
+                <td>3</td>
+                <td>4</td>
+                <td>7</td>
+                <td>16</td>
+                <td>20</td>
+                <td> -4</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">19 Remo</td>
+                <td>12</td>
+                <td>15</td>
+                <td>2</td>
+                <td>6</td>
+                <td>7</td>
+                <td>16</td>
+                <td>25</td>
+                <td> -9</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+            <tr>
+                <td class="time">20 Chapecoense </td>
+                <td>9</td>
+                <td>14</td>
+                <td>1</td>
+                <td>6</td>
+                <td>7</td>
+                <td>14</td>
+                <td>27</td>
+                <td> -13</td>
+                <td class="aproveitamento" ></td>
+            </tr>
+        </tbody>
+       
+       </table>
+   </div>
+   
+   <script>
+    //Conteudo não presente na aula, fiz por conta propia
+    // Seleciona todas as linhas do corpo da tabela
+    const linhas = document.querySelectorAll("tbody tr");
+  
+    linhas.forEach(linha => {
+      const celulas = linha.querySelectorAll("td");
+      const pontos = parseInt(celulas[1].textContent);
+      const jogos = parseInt(celulas[2].textContent);
+      // Calcula o aproveitamento
+      const aproveitamento = ((pontos / (jogos * 3)) * 100).toFixed(0);
+  
+      // Insere o valor na última célula (%)
+      celulas[celulas.length - 1].textContent = aproveitamento + "%";
+    });
+  </script>
+  
+</body>

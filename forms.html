@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        div{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            margin: 10px;
+            height: 100%;
+        }
+        fieldset{
+            display: grid;
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <div>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for=""> <strong>Nome</strong> </label>
+            <input type="text" name="" id="" placeholder="Digite seu nome">
+
+            <label for=""><strong>Data de nasimento</strong></label>
+            <input type="date" name="" id="">
+
+            <div class="escolha">
+                <label for=""><strong>Estado civil</strong></label>
+                <br>
+                <label for="estadocivil">
+                    <input type="radio" name="estadocivil" id="estadocivil" value="solteiro">
+                    solteiro(a)
+                </label>
+                
+                <label for="estadocivil">
+                    <input type="radio" name="estadocivil" id="estadocivil" value="casado">
+                    Casado(a)
+                </label>
+
+                <label for="estadocivil">
+                    <input type="radio" name="estadocivil" id="estadocivil" value="viuvo">
+                    viuvo(a)
+                </label>
+            </div>
+        
+            <label for=""><strong>Tem filhos</strong></label>
+            <label for="filho">
+                <input type="radio" name="filho" id="filho">
+                sim
+            </label>
+
+            <label for="filho">
+                <input type="radio" name="filho" id="filho">
+                Não
+            </label>
+
+            <label for=""><strong>Com quem mora</strong></label>
+            <input type="text" name="" id="" placeholder="informe uma resposta valida">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados de contato</legend>
+
+            <label for=""><strong>Numero para contato</strong></label>
+            <input type="text" name="" id="" placeholder="(00) 00000-0000">
+
+            <label for=""><strong>E-mail</strong></label>
+            <input type="email" name="" id="" placeholder="Informe o endereço de e-mail">
+
+            <label for=""><strong>instagram</strong></label>
+            <input type="text" name="" id="" placeholder="Informe o @">
+            
+            <label for=""><strong>Contato de emergência</strong></label>
+            <input type="text" name="" id="" placeholder="(00) 00000-0000" >
+            
+        
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados de endereço</legend>
+
+            <label for=""><strong>Endereço</strong></label>
+            <input type="text" name="" id="" placeholder="Informe seu endereço">
+
+            <label for=""><strong>N°</strong></label>
+            <input type="text" name="" id="">
+
+            <label for=""><strong>Cep</strong></label>
+            <input type="text" name="" id="" placeholder="00000-000" >
+
+            <label for=""><strong>Cidade/estado</strong></label>
+            <input type="text" name="" id="" placeholder="São paulo-SP" >
+
+        
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados academicos</legend>
+
+            <label for=""><strong>Escolaridade</strong></label>
+            <input type="text" name="" id="" placeholder="informar o grau">
+            <label for=""><strong>Possui faculdade ?</strong></label>
+            <input type="text" name="" id="">
+
+            <label for=""><strong>Formação em: </strong></label>
+            <input type="text" name="" id="" placeholder="informe a formação">
+
+            <label for=""><strong>Curso ou especialidade complementar</strong></label>
+            <input type="text" name="" id="" placeholder="informe a qualificação">
+
+        </fieldest>
+    </div>
+</body>
+</html>
