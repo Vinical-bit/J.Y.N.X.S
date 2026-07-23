@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport garante que o layout funcione bem também em telas menores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragão que segue o mouse</title>
+    <link rel="stylesheet" href="dragao.css">
+</head>
+<body>
+
+    <!-- Texto só pra dar contexto visual, não tem função no script -->
+    <h1>Mexa o mouse pela tela 🐉</h1>
+
+    <!-- Essa div é o "corpo" do dragão. Usamos uma div em vez de <img>
+         porque o dragão é feito só com emoji + CSS, não precisa de arquivo de imagem -->
+    <div id="dragao">🥊</div>
+
+    <!-- O script fica no final do body para garantir que a div #dragao
+         já exista no HTML antes do JS tentar selecioná-la -->
+    <script src="dragao.js"></script>
+</body>
+</html>

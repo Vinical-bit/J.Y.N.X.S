@@ -1,0 +1,36 @@
+/* Removemos a margem padrão e escondemos a barra de rolagem
+   para o dragão poder andar pela tela toda sem "pular" o layout */
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* esconde a barra de rolagem */
+    background: #0d1117;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 20px;
+    opacity: 0.6; /* só um texto de apoio, não precisa chamar muita atenção */
+}
+
+#dragao {
+    position: fixed; /* fixed em vez de absolute: assim a posição é sempre
+                         relativa à tela, não ao scroll da página */
+    top: 0;
+    left: 0;
+    font-size: 60px;
+
+    /* transform é o que realmente move e gira o dragão (via JS).
+       left/top ficam fixos em 0 pra usarmos só o transform, que é
+       mais leve pro navegador animar do que mudar left/top toda hora */
+    transform: translate(-50%, -50%);
+
+    /* transition suaviza a rotação, senão o dragão "trava" o giro
+       de forma brusca a cada movimento do mouse */
+    transition: transform 0.08s linear;
+
+    pointer-events: none; /* impede que o dragão "roube" cliques do mouse */
+    user-select: none;    /* impede selecionar o emoji como se fosse texto */
+}
