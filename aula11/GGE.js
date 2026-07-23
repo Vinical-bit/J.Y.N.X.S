@@ -21,19 +21,19 @@ let aluno = [
         nome: "Vinical",
         notaa1: Math.ceil(Math.random() * (10 - 0)),
         notaa2: Math.ceil(Math.random() * (10 - 0)),
-        notaa3: Math.ceil(Math.random() * (10 - 0)),
+        notaa3: Math.ceil(Math.random() * (10 - 0))
     },
     {
         nome: "Rodrigo",
         notaa1: Math.ceil(Math.random() * (10 - 0)),
         notaa2: Math.ceil(Math.random() * (10 - 0)),
-        notaa3: Math.ceil(Math.random() * (10 - 0)),
+        notaa3: Math.ceil(Math.random() * (10 - 0))
     },
     {
         nome: "Matheus",
         notaa1: Math.ceil(Math.random() * (10 - 0)),
         notaa2: Math.ceil(Math.random() * (10 - 0)),
-        notaa3: Math.ceil(Math.random() * (10 - 0)),
+        notaa3: Math.ceil(Math.random() * (10 - 0))
     }
 ]
 
