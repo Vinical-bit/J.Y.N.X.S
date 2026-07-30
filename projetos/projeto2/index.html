@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2: Alterar texto</title>
+    <style>
+        /* Configurações Globais */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container Principal (Card) */
+        .card {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2d3436;
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: #636e72;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Formulário e Input */
+        .input-group {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #dfe6e9;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+
+        input[type="text"]:focus {
+            border-color: #74b9ff;
+        }
+
+        /* Área de Preview */
+        #textoPreview {
+            background-color: #f8f9fa;
+            border: 2px dashed #dfe6e9;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: #2d3436;
+            font-style: italic;
+            word-break: break-all;
+        }
+
+        /* Contador */
+        #charCount {
+            font-weight: bold;
+            color: #0984e3;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="card">
+        <h1>Desafio 2: Alterar texto</h1>
+        
+        <p>Digite uma mensagem para atualizar o texto da caixa em tempo real.</p>
+
+        <div class="input-group">
+            <label for="textoInput">Sua mensagem:</label>
+            <!-- Campo que aciona a funcao JS sempre que o usuario digita -->
+            <input type="text" id="textoInput" placeholder="Digite uma mensagem" oninput="getWord()">
+        </div>
+
+        <!-- Area atualizada dinamicamente com o texto informado -->
+        <div id="textoPreview">
+            Seu texto aparece aqui.
+        </div>
+
+        <!-- Contador de caracteres alterado via DOM -->
+        <span id="charCount">Caracteres: 0</span>
+    </main>
+    <!-- Script responsavel pela manipulacao dos elementos da pagina -->
+    <script src="script.js"></script>
+</body>
+</html>

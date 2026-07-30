@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1: Alterar cor</title>
+    <style>
+        /* Estilos de Reset e Fundo da Página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        /* Container Principal (Card) */
+        .card {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+        }
+
+        /* Seletor de Cor */
+        .control-group {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        input[type="color"] {
+            border: none;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            background: none;
+        }
+
+        /* Caixa Colorida */
+        #box {
+            width: 100%;
+            height: 150px;
+            background-color: #ffffff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Código da Cor */
+        #colorCode {
+            display: block;
+            font-family: monospace;
+            font-size: 1rem;
+            color: #444;
+            background-color: #f8f9fa;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="card">
+        <h1>Desafio 1: Alterar cor</h1>
+        
+        <p>Use o seletor abaixo para trocar a cor de fundo da caixa.</p>
+
+        <div class="control-group">
+            <label for="trocarBackground">Escolha uma cor:</label>
+            <!-- Input que dispara a funcao JS ao alterar a cor -->
+            <input oninput="alterCor()" type="color" id="trocarBackground" value="#ffffff" >
+        </div>
+
+        <!-- Elemento que tera a cor de fundo alterada via DOM -->
+        <div id="box"></div>
+
+        <!-- Texto atualizado dinamicamente com a cor selecionada -->
+        <span id="colorCode">Cor atual: #ffffff</span>
+    </main>
+
+    <!-- Script responsavel pela manipulacao dos elementos da pagina -->
+    <script src="script.js"></script>
+</body>
+</html>
