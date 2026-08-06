@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4 - Lista Dinamica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #1f2937;
+        }
+
+        .card {
+            width: min(100%, 560px);
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #4b5563;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        label,
+        .back-link {
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            margin: 12px 0 16px;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+        }
+
+        button {
+            padding: 10px 14px;
+            border: none;
+            border-radius: 10px;
+            background: #0f172a;
+            color: #ffffff;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .remove-item {
+            background: #dc2626;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 16px;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: #f8fafc;
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            color: #1d4ed8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <h1>Desafio 4: Lista dinamica</h1>
+        <p>Adicione itens na lista e remova quando quiser.</p>
+
+        <label for="itemInput">Novo item</label>
+        <input type="text" id="itemInput" placeholder="Ex: estudar DOM">
+
+        <div class="actions">
+            <button type="button" id="adicionarItem" onclick="add()">Adicionar</button>
+            <button type="button" id="limparLista" onclick="clearAll()" >Limpar lista</button>
+        </div>
+
+        <ul id="listaItens"></ul>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
