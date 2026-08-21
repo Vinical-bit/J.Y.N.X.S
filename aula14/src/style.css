@@ -1,0 +1,44 @@
+.description {
+  font-size: 1.2rem;
+  color: blue;
+  font-weight: bold;    
+}
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 7px black solid;
+    border-radius: 16px;
+
+}
+
+.pokebola {
+    border: 3px solid #eb0b0b;
+    border-radius: 8px;
+    padding: 1px;
+    margin: 2px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chosen {
+    border: 2px solid blue;
+    box-shadow: 0 4px 10px rgba(0, 0, 255, 0.2);
+    transform: scale(1.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+.img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    gap: 3px;
+    
+}
