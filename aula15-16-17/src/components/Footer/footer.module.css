@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section.footer{
+    background-color: aquamarine;
+    padding: 10px;
+    
+
+}
+
+section.footer > p{
+    text-align: center;
+}

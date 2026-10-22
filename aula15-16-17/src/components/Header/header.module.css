@@ -1,0 +1,29 @@
+header > section.foto{
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+section>img{
+width: 200px;
+aspect-ratio: 1/1;  /*proporção da imagem*/
+object-fit: cover;
+overflow: hidden;  /*se sobrar alguma coisa para fora ele vai ficar escondido*/
+border-radius: 50%;
+border: 2px solid  black;
+outline: 2px solid black ;
+margin: auto;
+margin-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: transform 0.5 else;
+}
+a:hover{
+    color: #e2e2e2;
+    transition: color 0.5s;
+    transform: translate(2px,3px);
+}
+
